@@ -3,7 +3,8 @@
 A simple interactive quiz application built with **HTML, CSS, and JavaScript**.
 
 The app presents multiple-choice questions, tracks the user's score, includes a countdown timer, and allows the user to review their answers after completing the quiz.
-
+![how it is shown](https://github.com/markcliff6064/week-2-quiz-app/blob/7561cfea633b2f587e7f786b57d949527b18af7c/quiz1.jpg)
+![how it is shown](https://github.com/markcliff6064/week-2-quiz-app/blob/7561cfea633b2f587e7f786b57d949527b18af7c/quiz2.jpg)
 ## Features
 
 * 15 multiple-choice questions
