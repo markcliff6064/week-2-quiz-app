@@ -1,0 +1,157 @@
+/* ================= GENERAL PAGE ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+
+/* Main quiz box */
+.quiz-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+}
+
+
+/* Each screen gets a white card */
+.screen {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/*
+    The hidden class allows JavaScript to show
+    and hide different screens without changing pages.
+*/
+.hidden {
+    display: none;
+}
+
+
+/* ================= BUTTONS ================= */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+
+/* ================= ANSWER BUTTONS ================= */
+
+.answer-btn {
+    background: #e5e7eb;
+    color: #222;
+    text-align: left;
+}
+
+.answer-btn:hover {
+    background: #d1d5db;
+}
+
+
+/*
+    JavaScript adds these classes after
+    the user selects an answer.
+*/
+.correct {
+    background: #22c55e !important;
+    color: white;
+}
+
+.wrong {
+    background: #ef4444 !important;
+    color: white;
+}
+
+
+/* ================= PROGRESS BAR ================= */
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #2563eb;
+    transition: width 0.3s;
+}
+
+
+/* ================= TIMER ================= */
+
+#timer {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* ================= REVIEW ================= */
+
+.review-card {
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 5px solid #ccc;
+    background: #f8fafc;
+}
+
+.review-correct {
+    border-left-color: #22c55e;
+}
+
+.review-wrong {
+    border-left-color: #ef4444;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 500px) {
+
+    .quiz-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .screen {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <!-- ================= START SCREEN ================= -->
+        <!-- This is the first screen the user sees. -->
+        <section id="start-screen" class="screen">
+
+            <h1>Mctaba Quiz App</h1>
+
+            <p>
+                Test your knowledge with 15 multiple-choice questions.
+            </p>
+
+            <!-- Previous score will be displayed here -->
+            <p id="last-score"></p>
+
+            <button id="start-btn">Start Quiz</button>
+
+        </section>
+
+
+        <!-- ================= QUIZ SCREEN ================= -->
+        <!-- JavaScript displays this section after Start Quiz is clicked. -->
+        <section id="quiz-screen" class="screen hidden">
+
+            <!-- Shows the current question number -->
+            <p id="progress-text">Question 1 of 15</p>
+
+            <!-- Progress bar -->
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <!-- Timer -->
+            <p id="timer">Time: 15s</p>
+
+            <!-- Current score -->
+            <p id="score">Score: 0</p>
+
+            <!-- Question text is inserted here by JavaScript -->
+            <h2 id="question"></h2>
+
+            <!-- JavaScript creates the four answer buttons here -->
+            <div id="answers"></div>
+
+        </section>
+
+
+        <!-- ================= RESULTS SCREEN ================= -->
+        <section id="results-screen" class="screen hidden">
+
+            <h2>Quiz Complete!</h2>
+
+            <p id="final-score"></p>
+            <p id="percentage"></p>
+            <p id="grade"></p>
+            <p id="message"></p>
+
+            <button id="review-btn">Review Answers</button>
+            <button id="restart-btn">Restart Quiz</button>
+
+        </section>
+
+
+        <!-- ================= REVIEW SCREEN ================= -->
+        <section id="review-screen" class="screen hidden">
+
+            <h2>Review Answers</h2>
+
+            <!-- JavaScript creates the review cards here -->
+            <div id="review-container"></div>
+
+            <button id="back-btn">Back to Results</button>
+
+        </section>
+
+    </main>
+
+
+    <!--
+        questions.js must load FIRST because it contains
+        the quizQuestions array used by script.js.
+    -->
+    <script src="questions.js"></script>
+
+    <!-- Main application logic -->
+    <script src="script.js"></script>
+
+</body>
+</html>
