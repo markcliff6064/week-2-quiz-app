@@ -83,6 +83,9 @@ The project implements the required functionality from the assignment:
 * Restart functionality
 * `localStorage`
 
+## Live Website
+https://markcliff6064.github.io/week-2-quiz-app/
+
 ## Author
 
 **Mark Mukami**
